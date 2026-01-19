@@ -33,12 +33,13 @@
             </div>
         </div>
     </nav>
-    <h1>I Miei Servizi</h1>
+    <h1>I Miei Prodotti</h1>
 
     <ul>
-        @foreach ($services as $service)
+        @foreach ($products as $product)
             <li>
-                <a href="/servizio/{{ $service }}"> {{ $service }}</a>
+                <a href="/prodotto/{{ $product['name'] }}"> {{ $product['name'] }} - Numeri Disponibili:
+                    {{ $product['number'] }}</a>
             </li>
         @endforeach
     </ul>

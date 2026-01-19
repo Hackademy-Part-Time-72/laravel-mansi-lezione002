@@ -33,15 +33,7 @@
             </div>
         </div>
     </nav>
-    <h1>I Miei Servizi</h1>
-
-    <ul>
-        @foreach ($services as $service)
-            <li>
-                <a href="/servizio/{{ $service }}"> {{ $service }}</a>
-            </li>
-        @endforeach
-    </ul>
+    <h1>Hai cliccato su {{ $service }}</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
