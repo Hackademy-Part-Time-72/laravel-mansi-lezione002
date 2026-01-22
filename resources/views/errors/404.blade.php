@@ -33,7 +33,11 @@
             </div>
         </div>
     </nav>
+    @extends('errors::minimal')
     <h1>Errore. Pagina non presente.</h1>
+    @section('title', __('Not Found'))
+    @section('code', '404')
+    @section('message', __('Not Found'))
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
