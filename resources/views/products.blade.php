@@ -28,7 +28,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/servizi">Servizi</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="/prodotti">Prodotti</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,8 +40,7 @@
     <ul>
         @foreach ($products as $product)
             <li>
-                <a href="/prodotto/{{ $product['name'] }}"> {{ $product['name'] }} - Numeri Disponibili:
-                    {{ $product['number'] }}</a>
+                <a href="/prodotto/{{ $product['slug'] }}"> {{ $product['name'] }}</a>
             </li>
         @endforeach
     </ul>

@@ -28,12 +28,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/servizi">Servizi</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="/prodotti">Prodotti</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <p>Ciao mi chiamo {{ $name }} e mi sono appena registrato. </p>
+
+    <p>Nome Prodotto: {{ $product['name'] }}</p>
+    <p>Numero Disponibile: {{ $product['number'] }}</p>
+    @foreach ($product['image'] as $image)
+        <img src="{{ $image }}" alt="">
+    @endforeach
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
