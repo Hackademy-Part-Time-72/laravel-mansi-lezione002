@@ -38,10 +38,25 @@
 
     <p>Nome Prodotto: {{ $product['name'] }}</p>
     <p>Numero Disponibile: {{ $product['number'] }}</p>
-    @foreach ($product['image'] as $image)
-        <img src="{{ $image }}" alt="">
-    @endforeach
 
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            @foreach ($product['image'] as $image)
+                <div class="carousel-item active">
+                    <img src="{{ $image }}" class="d-block w-100" alt="...">
+                </div>
+            @endforeach
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Indietro</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Avanti</span>
+        </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
