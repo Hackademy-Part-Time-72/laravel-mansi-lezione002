@@ -24,6 +24,7 @@ class ProductController extends Controller
             if ($product['slug'] == $name) {
                 //$product
                 return view('profile', ['product' => $product]);
+                //return view('profile', compact('product'));
             }
         }
         abort(404);

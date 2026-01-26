@@ -11,6 +11,9 @@ class PageController extends Controller
 
     public function homepage()
     {
+        //root=resources/views/
+        //welcome
+        //extension = .blade.php
         return view('welcome');
         //modificato
     }
