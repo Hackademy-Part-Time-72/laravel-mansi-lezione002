@@ -37,6 +37,8 @@
     </nav>
     <h1>I Miei Prodotti</h1>
 
+
+
     <ul>
         @foreach ($products as $product)
             <li>
