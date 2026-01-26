@@ -1,0 +1,7 @@
+- shufo.vscode-blade-formatter
+- onecentlin.laravel-blade
+- amiralizadeh9480.laravel-extra-intellisense
+- codingyu.laravel-goto-view
+- onecentlin.laravel5-snippets
+- bmewburn.vscode-intelephense-client
+- vscode-icons-team.vscode-icons
